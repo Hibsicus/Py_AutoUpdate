@@ -4,7 +4,7 @@ import os
 
 
 class ZipEdit():
-    def __init__(self, path, dest):
+    def __init__(self, path, dest=''):
         self.path = path
         self.dest = dest
     
@@ -36,6 +36,6 @@ if __name__ == '__main__':
     dest = r'D:\hello'
     extra = r'D:\BakeTest'
     
-    szip = ZipEdit(path, dest)
-    szip.package()
-    szip.unpackage(r'D:\hello.zip', extra)
+#    szip = ZipEdit(path, dest)
+#    szip.package()
+#    szip.unpackage(r'D:\hello.zip', extra)

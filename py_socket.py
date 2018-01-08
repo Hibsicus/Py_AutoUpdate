@@ -3,12 +3,20 @@ import socket
 import threading
 import multiprocessing as mp
 import struct
+import time
+import os
+
+import py_zipedit
+
+DIRPATH = os.getcwd()
 
 class SocketEdit():
     def __init__(self, host, port):
         self.host = host
         self.port = port
+        self.dataName = b''
         self.data = b''
+       
         
     def server(self, listenNum):
         s = socket.socket()
@@ -31,49 +39,111 @@ class SocketEdit():
             
         c.close()
         
+   
     def client(self):
+        #支援斷線重連
         s = socket.socket()
-        s.connect((self.host, self.port))
-        
+       
+        while True:
+            try:
+                s.connect((self.host, self.port)) 
+                break
+            except socket.error as err:
+                print(err)
+                time.sleep(1)
+                continue                              
+           
         listenThread = threading.Thread(target=self.listenMessage, args=(s,))
         listenThread.start()
-#        message = input('->')
-#        while message != 'q':
-#            s.send(message.encode('utf-8'))
-#            data = s.recv(1024).decode('utf-8')
-#            print('Received from server: ' + data)
-#            message = input('-> ')
-#        s.close()
+                
+            
+#       
         
-    def listenMessage(self, socket):
-        while(True):
-            self.recv_msg(socket)
+    def listenMessage(self, s):
+        #支援斷線重連
+        isConnect = True
+        while True:          
+            try:
+                self.recv_msg(s)
+            except socket.error as err:
+               print(err)
+               time.sleep(1)
+               isConnect = False
+            try:
+                if not isConnect:
+                    s.close()
+                    s = socket.socket()
+                    s.connect((self.host, self.port))
+                    isConnect = True
+            except socket.error as err:
+                print(err)
+                time.sleep(1)
+                
+               
+               
     
     
     def recv_msg(self, socket):
-        
-        raw_msglen = self.recvall(socket, 4)
-        print('GetStream: ')
-        print(raw_msglen)
-#        print(struct.unpack('>I', raw_msglen))
-        if not raw_msglen:
-            return None
-        
-        self.data = b''
-        msglen = struct.unpack('>I', raw_msglen)[0]
-        
-        self.recvall(socket, msglen)
-        
-    def recvall(self, socket, n):        
-        while len(self.data) < n:
-            packet = socket.recv(n - len(self.data))
-            if not packet:
-                return None
-            self.data += packet
+         #訊息類型(int) > 檔名長度(int) > 檔名 > 文件長度(int) > 文件內容
+              
+         self.dataName = b''
+         self.data = b''
+         
+         meta_type = socket.recv(8)
+         mt = int.from_bytes(meta_type, byteorder='big')
+         print(mt)
+         
+         self.f(int(mt), socket)
+                 
+         
+    
+    def Handle_Update(self, s):       
+        name_length = s.recv(8)
+        nl = int.from_bytes(name_length, byteorder='big')
+        print(nl)
+         
+        self.dataName = s.recv(int(nl))
+        print(self.dataName)
+         
+            
+        data_number = s.recv(8)
+        dl = int.from_bytes(data_number, byteorder='big')
+        print(dl)
+            
+        while len(self.data) < int(dl):
+            self.data += s.recv(512)
+                
         print(self.data)
-        
+        try:
+            dirname = r'\%s' % str(self.dataName.decode('utf-8'))
+            #寫入檔案
+            with open(DIRPATH + dirname, 'wb') as in_file:
+                in_file.write(self.data)
+            
+            #關閉主程式
+            os.system("taskkill /f /im " + 'TMS_Theater.exe')
+            
+            #解壓縮並覆蓋檔案
+            z = py_zipedit.ZipEdit(DIRPATH)
+            z.unpackage(DIRPATH + dirname, DIRPATH)    
+            
+            #刪除壓縮包
+            os.remove(DIRPATH + dirname)
+            
+        except Exception as err:
+            print(err)
+       
+            
+                         
+             
+         
+    def f(self, n, socket):
+        return {
+                6653 : self.Handle_Update(socket)
+                }[n]
+    
 if __name__ == '__main__':
-    soc = SocketEdit("127.0.0.1", 2000)
+    soc = SocketEdit("127.0.0.1", 2010)
     soc.client()
 #    serverThread = threading.Thread(target=soc.server, args=(1,))
 #    serverThread.start()

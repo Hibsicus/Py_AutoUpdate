@@ -85,8 +85,10 @@ class RegEdit():
 if __name__ == '__main__':
     reg = RegEdit(REG_ROOT, REG_PATH, REG_FLAGS)
     print(os.path.realpath(__file__))
+    name = r'\%s' % ("asd")
+    print(os.path.dirname(os.path.abspath(__file__)) + name)
 #    lis = list(reg.getAllValues())
-    print(reg.checkValueByname('Steam'))
+#    print(reg.checkValueByname('Steam'))
 #   
 #    for row in lis:
 #        print(row[0])
