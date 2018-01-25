@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 import socket
 import threading
-import multiprocessing as mp
 import struct
 import time
 import os
-
+import subprocess
 import py_zipedit
 
 DIRPATH = os.getcwd()
@@ -42,6 +41,11 @@ class SocketEdit():
    
     def client(self):
         #支援斷線重連
+        try:
+            subprocess.Popen('TMS_Client.exe')
+        except Exception as err:
+            print(err)
+            
         s = socket.socket()
        
         while True:
@@ -97,7 +101,18 @@ class SocketEdit():
                  
          
     
-    def Handle_Update(self, s):       
+    def Handle_Update(self, s):  
+         #關閉主程式
+        try:
+            os.system("taskkill /f /im " + 'TMS_Client.exe')
+        except Exception as closErr:
+            print(closErr)
+        
+        isSendSucess = True
+        sType = b'UpdateResult'
+        sData = b''
+        
+        
         name_length = s.recv(8)
         nl = int.from_bytes(name_length, byteorder='big')
         print(nl)
@@ -109,32 +124,56 @@ class SocketEdit():
         data_number = s.recv(8)
         dl = int.from_bytes(data_number, byteorder='big')
         print(dl)
-            
+        
         while len(self.data) < int(dl):
             self.data += s.recv(512)
-                
-        print(self.data)
+
         try:
             dirname = r'\%s' % str(self.dataName.decode('utf-8'))
-            #寫入檔案
+            #讀取並寫入檔案
             with open(DIRPATH + dirname, 'wb') as in_file:
-                in_file.write(self.data)
-            
-            #關閉主程式
-            os.system("taskkill /f /im " + 'TMS_Theater.exe')
-            
-            #解壓縮並覆蓋檔案
-            z = py_zipedit.ZipEdit(DIRPATH)
-            z.unpackage(DIRPATH + dirname, DIRPATH)    
+                in_file.write(self.data)                
+#                    self.data += s.recv(512)
+#                    in_file.write(self.data)
+        
+                
+            try:
+                #解壓縮並覆蓋檔案
+                z = py_zipedit.ZipEdit(DIRPATH)
+                z.unpackage(DIRPATH + dirname, DIRPATH)    
+                print("unpack sucess")              
+            except Exception as unpackErr:
+                print(unpackErr)
+                isSendSucess = False
+                sData = bytes(unpackErr, 'utf-8')
+                
             
             #刪除壓縮包
             os.remove(DIRPATH + dirname)
+            print("delete package")
             
+            try:
+                subprocess.Popen('TMS_Client.exe')
+            except Exception as err:
+                print(err)
+                isSendSucess = False
+                sData = bytes(err, 'utf-8')
+        
         except Exception as err:
             print(err)
-       
+            isSendSucess = False
+            sData = bytes(err, 'utf-8')
             
-                         
+            
+        
+        if isSendSucess:                              
+            sData = bytes('sucess', 'utf-8')
+            
+        ss = struct.pack('!I%dsI%ds' % (len(sType),len(sData), ), len(sType), sType, len(sData), sData)
+        print(ss)
+        s.send(ss)
+                
+        
              
          
     def f(self, n, socket):

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>modulegraph cross reference for py_main.py, pyi_rth_multiprocessing.py</title>
+    <title>modulegraph cross reference for py_main.py</title>
     <style>
       .node { padding: 0.5em 0 0.5em; border-top: thin grey dotted; }
       .moduletype { font: smaller italic }
@@ -9,7 +9,7 @@
     </style>
   </head>
   <body>
-    <h1>modulegraph cross reference for py_main.py, pyi_rth_multiprocessing.py</h1>
+    <h1>modulegraph cross reference for py_main.py</h1>
 
 <div class="node">
   <a name="py_main.py"></a>
@@ -306,7 +306,6 @@ imports:
  &#8226;   <a href="#pydoc_data">pydoc_data</a>
  &#8226;   <a href="#pydoc_data.topics">pydoc_data.topics</a>
  &#8226;   <a href="#pyexpat">pyexpat</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#quopri">quopri</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#re">re</a>
@@ -361,35 +360,12 @@ imports:
  &#8226;   <a href="#webbrowser">webbrowser</a>
  &#8226;   <a href="#winreg">winreg</a>
  &#8226;   <a href="#xml">xml</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers">xml.parsers</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
  &#8226;   <a href="#zipfile">zipfile</a>
  &#8226;   <a href="#zipimport">zipimport</a>
  &#8226;   <a href="#zlib">zlib</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="pyi_rth_multiprocessing.py"></a>
-  <a target="code" href="///D:/anaconda/lib/site-packages/PyInstaller/loader/rthooks/pyi_rth_multiprocessing.py" type="text/plain"><tt>pyi_rth_multiprocessing.py</tt></a>
-<span class="moduletype">Script</span>  <div class="import">
-imports:
-    <a href="#'multiprocessing.forking'">'multiprocessing.forking'</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#subprocess">subprocess</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#py_main.py">py_main.py</a>
 
   </div>
 
@@ -409,22 +385,11 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="'multiprocessing.forking'"></a>
-  <a target="code" href="" type="text/plain"><tt>'multiprocessing.forking'</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="'org.python'"></a>
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
 
@@ -671,16 +636,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="_ctypes"></a>
-  <tt>_ctypes</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\_ctypes.pyd</tt></span>  <div class="import">
-imported by:
-    <a href="#ctypes">ctypes</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="_datetime"></a>
   <tt>_datetime</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imports:
@@ -692,16 +647,6 @@ imports:
 imported by:
     <a href="#datetime">datetime</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="_decimal"></a>
-  <tt>_decimal</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\_decimal.pyd</tt></span>  <div class="import">
-imported by:
-    <a href="#decimal">decimal</a>
 
   </div>
 
@@ -735,6 +680,25 @@ imported by:
 imported by:
     <a href="#dummy_threading">dummy_threading</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="_elementtree"></a>
+  <tt>_elementtree</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\_elementtree.pyd</tt></span>  <div class="import">
+imports:
+    <a href="#pyexpat">pyexpat</a>
+ &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
+ &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+ &#8226;   <a href="#xml.etree.cElementTree">xml.etree.cElementTree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
 
   </div>
 
@@ -893,19 +857,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="_multiprocessing"></a>
-  <tt>_multiprocessing</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\_multiprocessing.pyd</tt></span>  <div class="import">
-imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="_opcode"></a>
   <tt>_opcode</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
@@ -920,8 +871,7 @@ imported by:
   <a name="_operator"></a>
   <tt>_operator</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#hmac">hmac</a>
- &#8226;   <a href="#operator">operator</a>
+    <a href="#operator">operator</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
 
   </div>
@@ -956,32 +906,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#subprocess">subprocess</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="_pydecimal"></a>
-  <a target="code" href="///D:/anaconda/lib/_pydecimal.py" type="text/plain"><tt>_pydecimal</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#collections">collections</a>
- &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#locale">locale</a>
- &#8226;   <a href="#math">math</a>
- &#8226;   <a href="#numbers">numbers</a>
- &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#decimal">decimal</a>
 
   </div>
 
@@ -1248,7 +1174,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#abc">abc</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#weakref">weakref</a>
@@ -1261,11 +1186,7 @@ imported by:
   <a name="_winapi"></a>
   <tt>_winapi</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#subprocess">subprocess</a>
 
   </div>
@@ -1300,8 +1221,6 @@ imported by:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#io">io</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#numbers">numbers</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#selectors">selectors</a>
@@ -1343,18 +1262,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="array"></a>
-  <tt>array</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
-imported by:
-    <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="ast"></a>
   <a target="code" href="///D:/anaconda/lib/ast.py" type="text/plain"><tt>ast</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -1378,7 +1285,6 @@ imported by:
   <tt>atexit</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -1409,7 +1315,6 @@ imported by:
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -1469,8 +1374,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
@@ -1778,8 +1682,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
- &#8226;   <a href="#argparse">argparse</a>
+    <a href="#argparse">argparse</a>
  &#8226;   <a href="#ast">ast</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
  &#8226;   <a href="#contextlib">contextlib</a>
@@ -1794,14 +1697,11 @@ imported by:
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
@@ -1816,6 +1716,7 @@ imported by:
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#weakref">weakref</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
 
   </div>
 
@@ -1860,6 +1761,7 @@ imported by:
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#unittest.case">unittest.case</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
 
   </div>
 
@@ -1870,8 +1772,8 @@ imported by:
   <a target="code" href="///D:/anaconda/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#copyreg">copyreg</a>
+    <a href="#copyreg">copyreg</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -1889,6 +1791,7 @@ imported by:
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
 
   </div>
 
@@ -1901,48 +1804,9 @@ imported by:
 imported by:
     <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#copy">copy</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#re">re</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="ctypes"></a>
-  <a target="code" href="///D:/anaconda/lib/ctypes/__init__.py" type="text/plain"><tt>ctypes</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
-imports:
-    <a href="#_ctypes">_ctypes</a>
- &#8226;   <a href="#ctypes._endian">ctypes._endian</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#struct">struct</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#ctypes._endian">ctypes._endian</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="ctypes._endian"></a>
-  <a target="code" href="///D:/anaconda/lib/ctypes/_endian.py" type="text/plain"><tt>ctypes._endian</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#ctypes">ctypes</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#ctypes">ctypes</a>
 
   </div>
 
@@ -1967,24 +1831,6 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="decimal"></a>
-  <a target="code" href="///D:/anaconda/lib/decimal.py" type="text/plain"><tt>decimal</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_decimal">_decimal</a>
- &#8226;   <a href="#_pydecimal">_pydecimal</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -2084,7 +1930,6 @@ imported by:
     <a href="#bz2">bz2</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
- &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -5180,8 +5025,6 @@ imported by:
 imported by:
     <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#shutil">shutil</a>
@@ -5190,7 +5033,6 @@ imported by:
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -5269,7 +5111,6 @@ imported by:
  &#8226;   <a href="#ipaddress">ipaddress</a>
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#operator">operator</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
@@ -5452,7 +5293,6 @@ imports:
 imported by:
     <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#tarfile">tarfile</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -5475,8 +5315,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#hmac">hmac</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
@@ -5498,25 +5337,6 @@ imported by:
     <a href="#collections">collections</a>
  &#8226;   <a href="#difflib">difflib</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
- &#8226;   <a href="#queue">queue</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="hmac"></a>
-  <a target="code" href="///D:/anaconda/lib/hmac.py" type="text/plain"><tt>hmac</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_operator">_operator</a>
- &#8226;   <a href="#hashlib">hashlib</a>
- &#8226;   <a href="#warnings">warnings</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
 
   </div>
 
@@ -5601,7 +5421,6 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -5795,7 +5614,6 @@ imported by:
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#runpy">runpy</a>
 
   </div>
 
@@ -5823,7 +5641,6 @@ imported by:
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -5901,10 +5718,6 @@ imported by:
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#lzma">lzma</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#plistlib">plistlib</a>
@@ -5921,9 +5734,9 @@ imported by:
  &#8226;   <a href="#tokenize">tokenize</a>
  &#8226;   <a href="#unittest.result">unittest.result</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -5951,14 +5764,9 @@ imported by:
   <a name="itertools"></a>
   <tt>itertools</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
- &#8226;   <a href="#calendar">calendar</a>
+    <a href="#calendar">calendar</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#inspect">inspect</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
@@ -6049,11 +5857,11 @@ imports:
   <div class="import">
 imported by:
     <a href="#_bootlocale">_bootlocale</a>
- &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#calendar">calendar</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
 
   </div>
 
@@ -6081,7 +5889,6 @@ imports:
 imported by:
     <a href="#hashlib">hashlib</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#unittest.case">unittest.case</a>
 
@@ -6127,8 +5934,7 @@ imported by:
   <a name="math"></a>
   <tt>math</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
- &#8226;   <a href="#datetime">datetime</a>
+    <a href="#datetime">datetime</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#selectors">selectors</a>
@@ -6161,766 +5967,12 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="mmap"></a>
-  <tt>mmap</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
-imported by:
-    <a href="#multiprocessing.heap">multiprocessing.heap</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="msvcrt"></a>
   <tt>msvcrt</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
     <a href="#getpass">getpass</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#subprocess">subprocess</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/__init__.py" type="text/plain"><tt>multiprocessing</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
-imports:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.AuthenticationError">multiprocessing.AuthenticationError</a>
- &#8226;   <a href="#multiprocessing.BufferTooShort">multiprocessing.BufferTooShort</a>
- &#8226;   <a href="#multiprocessing.TimeoutError">multiprocessing.TimeoutError</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.get_context">multiprocessing.get_context</a>
- &#8226;   <a href="#multiprocessing.get_start_method">multiprocessing.get_start_method</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.set_start_method">multiprocessing.set_start_method</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#py_socket">py_socket</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.AuthenticationError"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.AuthenticationError</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.BufferTooShort"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.BufferTooShort</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.TimeoutError"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.TimeoutError</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.connection"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/connection.py" type="text/plain"><tt>multiprocessing.connection</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_multiprocessing">_multiprocessing</a>
- &#8226;   <a href="#_winapi">_winapi</a>
- &#8226;   <a href="#hmac">hmac</a>
- &#8226;   <a href="#io">io</a>
- &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.AuthenticationError">multiprocessing.AuthenticationError</a>
- &#8226;   <a href="#multiprocessing.BufferTooShort">multiprocessing.BufferTooShort</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#selectors">selectors</a>
- &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#struct">struct</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#time">time</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.context"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/context.py" type="text/plain"><tt>multiprocessing.context</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.dummy"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/dummy/__init__.py" type="text/plain"><tt>multiprocessing.dummy</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
-imports:
-    <a href="#array">array</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#queue">queue</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#weakref">weakref</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.dummy.connection"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/dummy/connection.py" type="text/plain"><tt>multiprocessing.dummy.connection</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#queue">queue</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.forkserver"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/forkserver.py" type="text/plain"><tt>multiprocessing.forkserver</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#errno">errno</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#random">random</a>
- &#8226;   <a href="#selectors">selectors</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#struct">struct</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.get_context"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.get_context</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.get_start_method"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.get_start_method</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.heap"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/heap.py" type="text/plain"><tt>multiprocessing.heap</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_winapi">_winapi</a>
- &#8226;   <a href="#bisect">bisect</a>
- &#8226;   <a href="#mmap">mmap</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#threading">threading</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.managers"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/managers.py" type="text/plain"><tt>multiprocessing.managers</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#array">array</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.get_context">multiprocessing.get_context</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#queue">queue</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
- &#8226;   <a href="#traceback">traceback</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.pool"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/pool.py" type="text/plain"><tt>multiprocessing.pool</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#collections">collections</a>
- &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.TimeoutError">multiprocessing.TimeoutError</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.get_context">multiprocessing.get_context</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#queue">queue</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
- &#8226;   <a href="#traceback">traceback</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.popen_fork"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/popen_fork.py" type="text/plain"><tt>multiprocessing.popen_fork</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#random">random</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.popen_forkserver"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/popen_forkserver.py" type="text/plain"><tt>multiprocessing.popen_forkserver</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#io">io</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.popen_spawn_posix"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/popen_spawn_posix.py" type="text/plain"><tt>multiprocessing.popen_spawn_posix</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#io">io</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.popen_spawn_win32"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/popen_spawn_win32.py" type="text/plain"><tt>multiprocessing.popen_spawn_win32</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_winapi">_winapi</a>
- &#8226;   <a href="#msvcrt">msvcrt</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.process"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/process.py" type="text/plain"><tt>multiprocessing.process</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_weakrefset">_weakrefset</a>
- &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#traceback">traceback</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.queues"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/queues.py" type="text/plain"><tt>multiprocessing.queues</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_multiprocessing">_multiprocessing</a>
- &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#errno">errno</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#queue">queue</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
- &#8226;   <a href="#traceback">traceback</a>
- &#8226;   <a href="#weakref">weakref</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.reduction"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/reduction.py" type="text/plain"><tt>multiprocessing.reduction</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_winapi">_winapi</a>
- &#8226;   <a href="#abc">abc</a>
- &#8226;   <a href="#array">array</a>
- &#8226;   <a href="#copyreg">copyreg</a>
- &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#io">io</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#pickle">pickle</a>
- &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#sys">sys</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.resource_sharer"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/resource_sharer.py" type="text/plain"><tt>multiprocessing.resource_sharer</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#socket">socket</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.semaphore_tracker"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/semaphore_tracker.py" type="text/plain"><tt>multiprocessing.semaphore_tracker</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_multiprocessing">_multiprocessing</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#signal">signal</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#warnings">warnings</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.set_start_method"></a>
-  <a target="code" href="" type="text/plain"><tt>multiprocessing.set_start_method</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.sharedctypes"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/sharedctypes.py" type="text/plain"><tt>multiprocessing.sharedctypes</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#ctypes">ctypes</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.get_context">multiprocessing.get_context</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#weakref">weakref</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.spawn"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/spawn.py" type="text/plain"><tt>multiprocessing.spawn</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#msvcrt">msvcrt</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.get_start_method">multiprocessing.get_start_method</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.set_start_method">multiprocessing.set_start_method</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#runpy">runpy</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#types">types</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.synchronize"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/synchronize.py" type="text/plain"><tt>multiprocessing.synchronize</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_multiprocessing">_multiprocessing</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#struct">struct</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="multiprocessing.util"></a>
-  <a target="code" href="///D:/anaconda/lib/multiprocessing/util.py" type="text/plain"><tt>multiprocessing.util</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_posixsubprocess">_posixsubprocess</a>
- &#8226;   <a href="#atexit">atexit</a>
- &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#shutil">shutil</a>
- &#8226;   <a href="#subprocess">subprocess</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#traceback">traceback</a>
- &#8226;   <a href="#weakref">weakref</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
 
   </div>
 
@@ -7023,22 +6075,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="numbers"></a>
-  <a target="code" href="///D:/anaconda/lib/numbers.py" type="text/plain"><tt>numbers</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#abc">abc</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#_pydecimal">_pydecimal</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="opcode"></a>
   <a target="code" href="///D:/anaconda/lib/opcode.py" type="text/plain"><tt>opcode</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -7102,7 +6138,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
 
   </div>
@@ -7134,7 +6170,6 @@ imported by:
     <a href="#argparse">argparse</a>
  &#8226;   <a href="#bdb">bdb</a>
  &#8226;   <a href="#bz2">bz2</a>
- &#8226;   <a href="#ctypes">ctypes</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#email.utils">email.utils</a>
  &#8226;   <a href="#fnmatch">fnmatch</a>
@@ -7152,22 +6187,6 @@ imported by:
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#lzma">lzma</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_forkserver">multiprocessing.popen_forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_posix">multiprocessing.popen_spawn_posix</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#netrc">netrc</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#ntpath">ntpath</a>
@@ -7183,7 +6202,6 @@ imported by:
  &#8226;   <a href="#py_socket">py_socket</a>
  &#8226;   <a href="#py_zipedit">py_zipedit</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
@@ -7246,7 +6264,8 @@ imported by:
   <a target="code" href="///D:/anaconda/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#codecs">codecs</a>
@@ -7255,7 +6274,6 @@ imports:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -7265,8 +6283,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#tracemalloc">tracemalloc</a>
 
   </div>
@@ -7297,7 +6314,6 @@ imports:
 imported by:
     <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#runpy">runpy</a>
 
   </div>
 
@@ -7477,6 +6493,7 @@ imports:
     <a href="#os">os</a>
  &#8226;   <a href="#win32api">win32api</a>
  &#8226;   <a href="#win32con">win32con</a>
+ &#8226;   <a href="#winreg">winreg</a>
 
   </div>
   <div class="import">
@@ -7492,11 +6509,11 @@ imported by:
   <a target="code" href="///D:/GitUse/python_reg/py_socket.py" type="text/plain"><tt>py_socket</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#os">os</a>
+    <a href="#os">os</a>
  &#8226;   <a href="#py_zipedit">py_zipedit</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#struct">struct</a>
+ &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#time">time</a>
 
@@ -7605,32 +6622,10 @@ imported by:
   <a name="pyexpat"></a>
   <tt>pyexpat</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\pyexpat.pyd</tt></span>  <div class="import">
 imported by:
-    <a href="#py_main.py">py_main.py</a>
+    <a href="#_elementtree">_elementtree</a>
+ &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="queue"></a>
-  <a target="code" href="///D:/anaconda/lib/queue.py" type="text/plain"><tt>queue</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#collections">collections</a>
- &#8226;   <a href="#dummy_threading">dummy_threading</a>
- &#8226;   <a href="#heapq">heapq</a>
- &#8226;   <a href="#threading">threading</a>
- &#8226;   <a href="#time">time</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.dummy.connection">multiprocessing.dummy.connection</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
 
   </div>
 
@@ -7679,8 +6674,6 @@ imports:
 imported by:
     <a href="#email.generator">email.generator</a>
  &#8226;   <a href="#email.utils">email.utils</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#tempfile">tempfile</a>
 
@@ -7704,8 +6697,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
- &#8226;   <a href="#_sre">_sre</a>
+    <a href="#_sre">_sre</a>
  &#8226;   <a href="#_strptime">_strptime</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#base64">base64</a>
@@ -7739,7 +6731,6 @@ imported by:
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#string">string</a>
@@ -7752,6 +6743,8 @@ imported by:
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -7808,27 +6801,6 @@ imported by:
 </div>
 
 <div class="node">
-  <a name="runpy"></a>
-  <a target="code" href="///D:/anaconda/lib/runpy.py" type="text/plain"><tt>runpy</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#importlib.machinery">importlib.machinery</a>
- &#8226;   <a href="#importlib.util">importlib.util</a>
- &#8226;   <a href="#pkgutil">pkgutil</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#types">types</a>
- &#8226;   <a href="#warnings">warnings</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
-
-  </div>
-
-</div>
-
-<div class="node">
   <a name="select"></a>
   <tt>select</tt> <span class="moduletype"><tt>d:\anaconda\DLLs\select.pyd</tt></span>  <div class="import">
 imported by:
@@ -7856,9 +6828,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#socket">socket</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
@@ -7914,7 +6884,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#http.server">http.server</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#tarfile">tarfile</a>
  &#8226;   <a href="#tempfile">tempfile</a>
@@ -7937,13 +6906,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#pdb">pdb</a>
+    <a href="#pdb">pdb</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#unittest.signals">unittest.signals</a>
@@ -7973,10 +6936,6 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.server">http.server</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#py_socket">py_socket</a>
@@ -8183,12 +7142,8 @@ imports:
   <div class="import">
 imported by:
     <a href="#base64">base64</a>
- &#8226;   <a href="#ctypes">ctypes</a>
  &#8226;   <a href="#gettext">gettext</a>
  &#8226;   <a href="#gzip">gzip</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#plistlib">plistlib</a>
@@ -8226,12 +7181,11 @@ imports:
   <div class="import">
 imported by:
     <a href="#http.server">http.server</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#py_socket">py_socket</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
 
   </div>
@@ -8244,7 +7198,6 @@ imported by:
 imported by:
     <a href="#_bootlocale">_bootlocale</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
- &#8226;   <a href="#_pydecimal">_pydecimal</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#base64">base64</a>
  &#8226;   <a href="#bdb">bdb</a>
@@ -8254,8 +7207,6 @@ imported by:
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#contextlib">contextlib</a>
- &#8226;   <a href="#ctypes">ctypes</a>
- &#8226;   <a href="#ctypes._endian">ctypes._endian</a>
  &#8226;   <a href="#dis">dis</a>
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#dummy_threading">dummy_threading</a>
@@ -8280,23 +7231,6 @@ imported by:
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#mimetypes">mimetypes</a>
- &#8226;   <a href="#multiprocessing">multiprocessing</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.popen_fork">multiprocessing.popen_fork</a>
- &#8226;   <a href="#multiprocessing.popen_spawn_win32">multiprocessing.popen_spawn_win32</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.reduction">multiprocessing.reduction</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#optparse">optparse</a>
  &#8226;   <a href="#os">os</a>
@@ -8309,9 +7243,7 @@ imported by:
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#pyi_rth_multiprocessing.py">pyi_rth_multiprocessing.py</a>
  &#8226;   <a href="#quopri">quopri</a>
- &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#selectors">selectors</a>
  &#8226;   <a href="#shlex">shlex</a>
  &#8226;   <a href="#shutil">shutil</a>
@@ -8337,12 +7269,12 @@ imported by:
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#weakref">weakref</a>
  &#8226;   <a href="#webbrowser">webbrowser</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
  &#8226;   <a href="#xml.sax._exceptions">xml.sax._exceptions</a>
  &#8226;   <a href="#xml.sax.expatreader">xml.sax.expatreader</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -8402,11 +7334,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
- &#8226;   <a href="#py_main.py">py_main.py</a>
+    <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#urllib.response">urllib.response</a>
@@ -8468,27 +7396,14 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#_pydecimal">_pydecimal</a>
- &#8226;   <a href="#_threading_local">_threading_local</a>
+    <a href="#_threading_local">_threading_local</a>
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#dummy_threading">dummy_threading</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.context">multiprocessing.context</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.forkserver">multiprocessing.forkserver</a>
- &#8226;   <a href="#multiprocessing.heap">multiprocessing.heap</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.resource_sharer">multiprocessing.resource_sharer</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#py_socket">py_socket</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#subprocess">subprocess</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -8518,16 +7433,10 @@ imported by:
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#http.server">http.server</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.connection">multiprocessing.connection</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.synchronize">multiprocessing.synchronize</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#py_socket">py_socket</a>
  &#8226;   <a href="#pydoc">pydoc</a>
- &#8226;   <a href="#queue">queue</a>
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#socketserver">socketserver</a>
  &#8226;   <a href="#ssl">ssl</a>
@@ -8536,7 +7445,6 @@ imported by:
  &#8226;   <a href="#threading">threading</a>
  &#8226;   <a href="#unittest.runner">unittest.runner</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -8608,11 +7516,6 @@ imported by:
  &#8226;   <a href="#doctest">doctest</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.managers">multiprocessing.managers</a>
- &#8226;   <a href="#multiprocessing.pool">multiprocessing.pool</a>
- &#8226;   <a href="#multiprocessing.process">multiprocessing.process</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#pdb">pdb</a>
  &#8226;   <a href="#py_compile">py_compile</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
@@ -8687,13 +7590,11 @@ imported by:
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
- &#8226;   <a href="#multiprocessing.spawn">multiprocessing.spawn</a>
  &#8226;   <a href="#pickle">pickle</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#random">random</a>
- &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#unittest.loader">unittest.loader</a>
 
   </div>
@@ -8999,7 +7900,6 @@ imported by:
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -9122,14 +8022,12 @@ imported by:
  &#8226;   <a href="#ftplib">ftplib</a>
  &#8226;   <a href="#getpass">getpass</a>
  &#8226;   <a href="#gzip">gzip</a>
- &#8226;   <a href="#hmac">hmac</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.cookiejar">http.cookiejar</a>
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib.util">importlib.util</a>
  &#8226;   <a href="#inspect">inspect</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.semaphore_tracker">multiprocessing.semaphore_tracker</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pkgutil">pkgutil</a>
@@ -9138,7 +8036,6 @@ imported by:
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#pydoc">pydoc</a>
  &#8226;   <a href="#random">random</a>
- &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#ssl">ssl</a>
  &#8226;   <a href="#string">string</a>
@@ -9149,6 +8046,7 @@ imported by:
  &#8226;   <a href="#unittest.loader">unittest.loader</a>
  &#8226;   <a href="#unittest.runner">unittest.runner</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#zipfile">zipfile</a>
 
   </div>
@@ -9176,10 +8074,6 @@ imported by:
  &#8226;   <a href="#copy">copy</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#multiprocessing.dummy">multiprocessing.dummy</a>
- &#8226;   <a href="#multiprocessing.queues">multiprocessing.queues</a>
- &#8226;   <a href="#multiprocessing.sharedctypes">multiprocessing.sharedctypes</a>
- &#8226;   <a href="#multiprocessing.util">multiprocessing.util</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
  &#8226;   <a href="#tempfile">tempfile</a>
  &#8226;   <a href="#unittest.signals">unittest.signals</a>
@@ -9244,6 +8138,7 @@ imported by:
     <a href="#mimetypes">mimetypes</a>
  &#8226;   <a href="#platform">platform</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#py_regedit">py_regedit</a>
  &#8226;   <a href="#urllib.request">urllib.request</a>
 
   </div>
@@ -9262,8 +8157,116 @@ imports:
   <div class="import">
 imported by:
     <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
  &#8226;   <a href="#xml.parsers">xml.parsers</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xml.etree"></a>
+  <a target="code" href="///D:/anaconda/lib/xml/etree/__init__.py" type="text/plain"><tt>xml.etree</tt></a>
+<span class="moduletype">Package</span>  <div class="import">
+imports:
+    <a href="#xml">xml</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
+ &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+ &#8226;   <a href="#xml.etree.cElementTree">xml.etree.cElementTree</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xml.etree.ElementInclude"></a>
+  <a target="code" href="///D:/anaconda/lib/xml/etree/ElementInclude.py" type="text/plain"><tt>xml.etree.ElementInclude</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#copy">copy</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#_elementtree">_elementtree</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xml.etree.ElementPath"></a>
+  <a target="code" href="///D:/anaconda/lib/xml/etree/ElementPath.py" type="text/plain"><tt>xml.etree.ElementPath</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#re">re</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#_elementtree">_elementtree</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xml.etree.ElementTree"></a>
+  <a target="code" href="///D:/anaconda/lib/xml/etree/ElementTree.py" type="text/plain"><tt>xml.etree.ElementTree</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#_elementtree">_elementtree</a>
+ &#8226;   <a href="#collections">collections</a>
+ &#8226;   <a href="#contextlib">contextlib</a>
+ &#8226;   <a href="#io">io</a>
+ &#8226;   <a href="#locale">locale</a>
+ &#8226;   <a href="#pyexpat">pyexpat</a>
+ &#8226;   <a href="#re">re</a>
+ &#8226;   <a href="#sys">sys</a>
+ &#8226;   <a href="#warnings">warnings</a>
+ &#8226;   <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementPath">xml.etree.ElementPath</a>
+ &#8226;   <a href="#xml.parsers">xml.parsers</a>
+ &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#_elementtree">_elementtree</a>
+ &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree.ElementInclude">xml.etree.ElementInclude</a>
+ &#8226;   <a href="#xml.etree.cElementTree">xml.etree.cElementTree</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="xml.etree.cElementTree"></a>
+  <a target="code" href="///D:/anaconda/lib/xml/etree/cElementTree.py" type="text/plain"><tt>xml.etree.cElementTree</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#xml.etree">xml.etree</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#_elementtree">_elementtree</a>
 
   </div>
 
@@ -9280,9 +8283,9 @@ imports:
   <div class="import">
 imported by:
     <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
  &#8226;   <a href="#xml.sax.expatreader">xml.sax.expatreader</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -9302,8 +8305,8 @@ imports:
 imported by:
     <a href="#plistlib">plistlib</a>
  &#8226;   <a href="#py_main.py">py_main.py</a>
+ &#8226;   <a href="#xml.etree.ElementTree">xml.etree.ElementTree</a>
  &#8226;   <a href="#xml.sax.expatreader">xml.sax.expatreader</a>
- &#8226;   <a href="#xmlrpc.client">xmlrpc.client</a>
 
   </div>
 
@@ -9448,45 +8451,6 @@ imported by:
  &#8226;   <a href="#xml.sax">xml.sax</a>
  &#8226;   <a href="#xml.sax.expatreader">xml.sax.expatreader</a>
  &#8226;   <a href="#xml.sax.saxutils">xml.sax.saxutils</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="xmlrpc"></a>
-  <a target="code" href="///D:/anaconda/lib/xmlrpc/__init__.py" type="text/plain"><tt>xmlrpc</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
-imported by:
-    <a href="#xmlrpc.client">xmlrpc.client</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="xmlrpc.client"></a>
-  <a target="code" href="///D:/anaconda/lib/xmlrpc/client.py" type="text/plain"><tt>xmlrpc.client</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#base64">base64</a>
- &#8226;   <a href="#datetime">datetime</a>
- &#8226;   <a href="#decimal">decimal</a>
- &#8226;   <a href="#errno">errno</a>
- &#8226;   <a href="#gzip">gzip</a>
- &#8226;   <a href="#http.client">http.client</a>
- &#8226;   <a href="#io">io</a>
- &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#time">time</a>
- &#8226;   <a href="#urllib.parse">urllib.parse</a>
- &#8226;   <a href="#xml.parsers">xml.parsers</a>
- &#8226;   <a href="#xml.parsers.expat">xml.parsers.expat</a>
- &#8226;   <a href="#xmlrpc">xmlrpc</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#multiprocessing.connection">multiprocessing.connection</a>
 
   </div>
 

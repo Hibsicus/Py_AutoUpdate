@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
 import win32api, win32con
 import os
+import winreg
 
 #root
 REG_ROOT = win32con.HKEY_CURRENT_USER
 
 #path
 REG_PATH = r"Software\Microsoft\Windows\CurrentVersion\run"
+COM_PATH = r'Software\Classes\ms-settings\shell\open\command'
 
 #flag
 REG_FLAGS = win32con.WRITE_OWNER | win32con.KEY_WOW64_64KEY | win32con.KEY_ALL_ACCESS
+
 
 
 class RegEdit():
@@ -80,10 +83,10 @@ class RegEdit():
         
         key.close()
         
-    
+   
     
 if __name__ == '__main__':
-    reg = RegEdit(REG_ROOT, REG_PATH, REG_FLAGS)
+#    reg = RegEdit(REG_ROOT, REG_PATH, REG_FLAGS)
     print(os.path.realpath(__file__))
     name = r'\%s' % ("asd")
     print(os.path.dirname(os.path.abspath(__file__)) + name)

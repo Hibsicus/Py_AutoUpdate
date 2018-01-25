@@ -1,14 +1,7 @@
-missing module named 'multiprocessing.forking' - imported by d:\anaconda\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_multiprocessing.py
-missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
-missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
-missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
-missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
-missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
-missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
 missing module named resource - imported by posix, D:\GitUse\python_reg\py_main.py
 missing module named posix - imported by os, D:\GitUse\python_reg\py_main.py
-missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, D:\GitUse\python_reg\py_main.py
-missing module named org - imported by pickle, D:\GitUse\python_reg\py_main.py
+missing module named _posixsubprocess - imported by subprocess, D:\GitUse\python_reg\py_main.py
+missing module named 'org.python' - imported by pickle, D:\GitUse\python_reg\py_main.py, xml.sax
 missing module named readline - imported by cmd, code, pdb, D:\GitUse\python_reg\py_main.py
 excluded module named _frozen_importlib - imported by importlib, importlib.abc, D:\GitUse\python_reg\py_main.py
 missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, D:\GitUse\python_reg\py_main.py
@@ -20,5 +13,5 @@ missing module named vms_lib - imported by platform, D:\GitUse\python_reg\py_mai
 missing module named termios - imported by tty, D:\GitUse\python_reg\py_main.py, getpass
 missing module named grp - imported by shutil, tarfile, D:\GitUse\python_reg\py_main.py
 missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, D:\GitUse\python_reg\py_main.py, netrc, getpass
-missing module named 'org.python' - imported by copy, D:\GitUse\python_reg\py_main.py, xml.sax
+missing module named org - imported by copy, D:\GitUse\python_reg\py_main.py
 missing module named _dummy_threading - imported by dummy_threading, D:\GitUse\python_reg\py_main.py
